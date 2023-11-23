@@ -4,8 +4,8 @@ Library          SeleniumLibrary
 *** Keywords ***
 
 Begin Web Test
-    [Arguments]                     ${web_url}
-    open browser                    ${web_url}    chrome
+    [Arguments]                     ${web_url}    ${browser}
+    open browser                    ${web_url}    ${browser}
     maximize browser window
 
 End Web Test
